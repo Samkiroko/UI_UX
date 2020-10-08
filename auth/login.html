@@ -90,7 +90,7 @@
                                                 <li><a href="../search-institute.html" title="Enrol to an institute">Join an institute</a></li>
                                                 <li><a href="../search-student-leads.html" title="Student requesting teachers">Teaching jobs</a></li>
                                                  <li><a class="" href="../courses.html"> Tuition Categories</a></li>
-                                                <li class="button-header margin-left "><a href="auth/login.html" class="btn"> Login <span class="hidden-navbtn">Or Register</span></span></a></li>
+                                                <li class="button-header margin-left "><a href="/auth/login.html" class="btn"> Login <span class="hidden-navbtn">Or Register</span></span></a></li>
                                             </ul>
                                         </nav>
                                     </div>
@@ -135,82 +135,85 @@
 			<!-- Sign in section -->
 			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 				<div class="sign-block signin-left">
-					<h2><span>Sign In</span> With Your Account</h2>
+					<h2><span>Login</span> With Your Account</h2>
 					
 					<span class="error"></span>
 					<form action="https://dialateacher.co.ke/auth/login" name="token_form" id="token_form" class="form-signin  comment-form" method="post" accept-charset="utf-8">
-						<div class="input-group ">
+						<div class="form-input ">
 							<label>Email&nbsp;<font color="red">*</font></label>
 							<input type="email" name="identity" value="" id="identity" placeholder="Email" class="form-control"  />
 							
 						</div>
-						<div class="input-group ">
+						<div class="form-input ">
 							<label>Password&nbsp;<font color="red">*</font></label>
 							<input type="password" name="password" value="" id="password" placeholder="Password" class="form-control"  />
 						</div>
 						<div class="check">
 							<a href="forgot_password.html" class="forgot-pass"> Forgot your password?</a>
 						</div>
-						<button class="btn-link-dark signin-btn center-block" type="submit" name="btnLogin">Sign In</button>
+						<button class="btn-link-dark signin-btn center-block" type="submit" name="btnLogin">Login</button>
 						</form>
+                        	                <div class="slogin-form">
+							<div class="or-seperator"><i>or</i></div>
+							<h2><span>Log In</span> With</h2>
+								<a href="https://www.facebook.com/v2.6/dialog/oauth?client_id=692218931370560&amp;state=046cb4dc8fc6bb1c53dc1f746afb3c9c&amp;response_type=code&amp;sdk=php-sdk-5.0.0&amp;redirect_uri=https%3A%2F%2Fdialateacher.co.ke%2Fuser_authentication_facebook&amp;scope=email" class="social-button" id="facebook-connect"> <span> Facebook</span></a>
+			                    <a href="https://accounts.google.com/o/oauth2/auth?response_type=code&amp;redirect_uri=https%3A%2F%2Fdialateacher.co.ke%2FGooglelogin%2F&amp;client_id=146942551019-q3qs3l81rv3cil0hn6f1i1l2lt3jkbtt.apps.googleusercontent.com&amp;scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&amp;access_type=online&amp;approval_prompt=auto" class="social-button" id="google-connect"> <span>  Google</span></a>					
+							<br><br>
+							<div class="forgot-pass">Note: Only for Students</div>
+						</div>
 				</div>
 			</div>
 			<!-- Sign up section -->
 			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 				<span class="error"></span>
 				<div class="sign-block">
-					<h2><span>Register </span> With Dial A Teacher</h2>
+					<h2><span>Sign Up </span> With Dial A Teacher</h2>
 					<form action="https://dialateacher.co.ke/auth/login" class="form-signup comment-form" name="token_form" id="token_form" method="post" accept-charset="utf-8">
 
 						
-						<div class="input-group ">
+						<div class="input-group-icon mt-10 ">
 							<label>Register As&nbsp;<font color="red">*</font></label>
 							<div class="dark-picker dark-picker-bright">
-							<select name="user_belongs_group" id="u_group" class="select-picker" onchange="toggle_name();">
+							<select name="user_belongs_group" id="u_group" class="form-select" onchange="toggle_name();">
 <option value="" selected="selected">Please Select Group</option>
 <option value="2">Student</option>
-<option value="3">Tutor</option>
-<option value="6">Corporate</option>
+<option value="3">Teacher</option>
+<option value="6">Institute</option>
 </select>
 	
 													</div>
 						</div>
 
-						<div class="input-group ">
+						<div class="form-input ">
 							<label id="lbl_fname">First Name&nbsp;<font color="red">*</font></label>
 							<input type="text" name="first_name" value="" id="first_name" placeholder="First Name" class="form-control"  />
 	
 						</div>
 
-						<div class="input-group " id="div_lname">
+						<div class="form-input " id="div_lname">
 							<label>Last Name</label>
 								<input type="text" name="last_name" value="" id="last_name" placeholder="Last Name" class="form-control"  />
 						</div>
 
-						<div class="input-group ">
+						<div class="form-input ">
 							<label>Email&nbsp;<font color="red">*</font></label>
 							<input type="text" name="identity" value="" id="company_identity" placeholder="Email" class="form-control"  />
 						</div>
-						<div class="input-group ">
+						<div class="form-input ">
 							<label>Password &nbsp;<font color="red">*</font>(Must Be At Least 6 Characters):</label>
 							<input type="password" name="password" value="" id="company_password" placeholder="Password" class="form-control"  />
 						</div>
 						
-						<div class="input-group ">
+						<div class="form-input ">
 							<label>Confirm Password&nbsp;<font color="red">*</font></label>
 							<input type="password" name="password_confirm" value="" id="password_confirm" placeholder="Confirm Password" class="form-control"  />
 						</div>
-						
-						
-				
-						
-						<div class="input-group ">
+						<div class="col-sm-10 input-group-icon">
 							<label>Phone Number&nbsp;<font color="red">*</font></label>
 							<div class="row">
-	    						<div class="col-sm-6 pad-right0">
-	    							<div class="dark-picker dark-picker-bright">
-									<select name="phone_code" id="phone_code" class="select-picker">
-<option value="" selected="selected">Select Phone Code</option>
+	    							<div class="col-sm-6">
+									<select name="phone_code" id="phone_code" class="form-select">
+<option value="" selected="selected">Country Code</option>
 <option value="0_93">Afghanistan +93</option>
 <option value="1_355">Albania +355</option>
 <option value="2_213">Algeria +213</option>
@@ -466,9 +469,8 @@
 <option value="252_211">South Sudan +211</option>
 </select>
 									</div>
-								</div>
 								<div class="col-sm-6">
-									<input type="text" name="phone" value="" id="phone" placeholder="Phone" class="form-control"  />
+									<input type="number" name="phone" value=""id="phone"placeholder="700 000 000" class="form-control"  />
 								</div>
 							</div>
 						</div>
@@ -557,14 +559,14 @@ function toggle_name()
                   <div class="footer-tittle">
                     <h4>Dial a teacher</h4>
                     <ul>
-                      <li><a href="about-us.html">About Us</a></li>
+                      <li><a href="../about-us.html">About Us</a></li>
                       <li>
-                        <a href="search-tutor.html">Find A Private Teacher</a>
+                        <a href="../search-tutor.html">Find A Private Teacher</a>
                       </li>
                       <li>
-                        <a href="search-institute.html">Join a group class</a>
+                        <a href="../search-institute.html">Join a group class</a>
                       </li>
-                      <li><a href="auth/login.html">Become a teacher</a></li>
+                      <li><a href="/auth/login.html">Become a teacher</a></li>
                     </ul>
                   </div>
                 </div>
@@ -575,15 +577,15 @@ function toggle_name()
                     <h4>More</h4>
                     <ul>
                       <li>
-                        <a href="terms-and-conditions.html">Privacy Policy</a>
+                        <a href="../terms-and-conditions.html">Privacy Policy</a>
                       </li>
                       <li>
-                        <a href="terms-and-conditions.html"
+                        <a href="../terms-and-conditions.html"
                           >Term & Conditions</a
                         >
                       </li>
-                      <li><a href="faqs.html">Knowledge base</a></li>
-                      <li><a href="contact-us.html">Contact Us</a></li>
+                      <li><a href="../faqs.html">Knowledge base</a></li>
+                      <li><a href="../contact-us.html">Contact Us</a></li>
                     </ul>
                   </div>
                 </div>
