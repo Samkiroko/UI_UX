@@ -171,7 +171,7 @@ a {
   color: #635c5c;
 }
 a:hover {
-  color: #fff;
+  color: rgb(240, 139, 57);
 }
 a:focus,
 a:hover,
@@ -181,7 +181,7 @@ a:hover,
 }
 a,
 button {
-  color: #fff;
+  color: rgb(176, 101, 247);
   outline: medium none;
 }
 button:focus,
